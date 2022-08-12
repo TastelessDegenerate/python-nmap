@@ -1,0 +1,98 @@
+{
+  "nmap": {
+    "command_line": "nmap -oX - -p 22-443 -sV 35.214.48.184",
+    "scaninfo": {
+      "tcp": {
+        "method": "syn",
+        "services": "22-443"
+      }
+    },
+    "scanstats": {
+      "timestr": "Wed Aug 10 12:06:31 2022",
+      "elapsed": "37.89",
+      "uphosts": "1",
+      "downhosts": "0",
+      "totalhosts": "1"
+    }
+  },
+  "scan": {
+    "35.214.48.184": {
+      "hostnames": [
+        {
+          "name": "184.48.214.35.bc.googleusercontent.com",
+          "type": "PTR"
+        }
+      ],
+      "addresses": {
+        "ipv4": "35.214.48.184"
+      },
+      "vendor": {},
+      "status": {
+        "state": "up",
+        "reason": "reset"
+      },
+      "tcp": {
+        "53": {
+          "state": "open",
+          "reason": "syn-ack",
+          "name": "domain",
+          "product": "",
+          "version": "",
+          "extrainfo": "generic dns response: NOTIMP",
+          "conf": "10",
+          "cpe": ""
+        },
+        "80": {
+          "state": "open",
+          "reason": "syn-ack",
+          "name": "http",
+          "product": "nginx",
+          "version": "",
+          "extrainfo": "",
+          "conf": "10",
+          "cpe": "cpe:/a:igor_sysoev:nginx"
+        },
+        "81": {
+          "state": "closed",
+          "reason": "reset",
+          "name": "hosts2-ns",
+          "product": "",
+          "version": "",
+          "extrainfo": "",
+          "conf": "3",
+          "cpe": ""
+        },
+        "110": {
+          "state": "open",
+          "reason": "syn-ack",
+          "name": "pop3",
+          "product": "Dovecot pop3d",
+          "version": "",
+          "extrainfo": "",
+          "conf": "10",
+          "cpe": "cpe:/a:dovecot:dovecot"
+        },
+        "143": {
+          "state": "open",
+          "reason": "syn-ack",
+          "name": "imap",
+          "product": "Dovecot imapd",
+          "version": "",
+          "extrainfo": "",
+          "conf": "10",
+          "cpe": "cpe:/a:dovecot:dovecot"
+        },
+        "443": {
+          "state": "open",
+          "reason": "syn-ack",
+          "name": "http",
+          "product": "nginx",
+          "version": "",
+          "extrainfo": "",
+          "conf": "10",
+          "cpe": "cpe:/a:igor_sysoev:nginx"
+        }
+      }
+    }
+  }
+}
